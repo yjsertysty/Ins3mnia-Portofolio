@@ -20,8 +20,14 @@ export function SiteNav() {
           <a href="#projects" className="transition-colors hover:text-foreground">
             {t.nav.projects}
           </a>
-          <a href="#about" className="transition-colors hover:text-foreground">
-            {t.nav.about}
+          <a href="#skills" className="transition-colors hover:text-foreground">
+            {t.nav.skills}
+          </a>
+          <a href="#why" className="transition-colors hover:text-foreground">
+            {t.nav.why}
+          </a>
+          <a href="#servers" className="transition-colors hover:text-foreground">
+            {t.nav.servers}
           </a>
           <a href="#contact" className="transition-colors hover:text-foreground">
             {t.nav.contact}

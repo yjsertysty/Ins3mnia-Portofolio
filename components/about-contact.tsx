@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Check, Copy, ArrowUpRight } from "lucide-react"
+import { Check, Copy, ArrowUpRight, Clock, Languages } from "lucide-react"
 import { GithubIcon } from "@/components/github-icon"
 import { useLanguage } from "@/components/language-provider"
 import { DISCORD, GITHUB } from "@/lib/content"
@@ -71,6 +71,27 @@ export function Contact() {
             </div>
             <ArrowUpRight className="size-5 shrink-0 text-muted-foreground" />
           </a>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="flex items-center gap-3 rounded-2xl border border-border bg-card/70 p-4 text-left">
+              <Clock className="size-5 shrink-0 text-primary" />
+              <div>
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  {t.contact.timezoneLabel}
+                </p>
+                <p className="text-sm font-bold">{t.contact.timezone}</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 rounded-2xl border border-border bg-card/70 p-4 text-left">
+              <Languages className="size-5 shrink-0 text-primary" />
+              <div>
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                  {t.contact.languagesLabel}
+                </p>
+                <p className="text-sm font-bold">{t.contact.languages}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
